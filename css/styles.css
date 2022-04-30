@@ -20,6 +20,8 @@ background серый: #F5F4FA;   */
   --primary-text-color: #212121;
   --text-description-color: #757575;
   --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-grey-color: #f5f4fa;
 }
 
 body {
@@ -70,9 +72,27 @@ body {
   color: var(--accent-color);
 }
 .section-uppertitle,
-.section-title {
+.section-title,
+.projects-uppertitle {
   color: var(--primary-text-color);
 }
-.section-description {
+.section-description,
+.project-description {
   color: var(--text-description-color);
+}
+
+/* Button */
+.button {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button.secondary {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-grey-color);
 }
