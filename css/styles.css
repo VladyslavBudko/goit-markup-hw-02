@@ -57,6 +57,9 @@ body {
 .header-contact:focus {
   color: var(--accent-color);
 }
+.header-list .header-link.current {
+  color: var(--accent-color);
+}
 
 /* footer */
 .footer-address {
