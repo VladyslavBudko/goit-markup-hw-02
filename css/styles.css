@@ -29,6 +29,10 @@ body {
   color: var(--primary-text-color);
 }
 
+ul {
+  list-style: none;
+}
+
 /* Logo */
 .logo {
   color: var(--accent-color);
