@@ -130,7 +130,7 @@ body {
   color: var(--accent-color);
 }
 
-/* section */
+/* studio */
 .section-uppertitle {
   color: var(--primary-text-color);
 
@@ -140,7 +140,7 @@ body {
   text-align: center;
 }
 
-.section-title {
+.features .section-title {
   color: var(--primary-text-color);
 
   font-weight: 700;
@@ -171,28 +171,46 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.19;
+}
 
-  /* Button */
+/* portfolio projekts */
 
-  .button {
-    color: var(--primary-text-color);
-    background-color: var(--primary-white-color);
-  }
+.projects .section-title {
+  color: var(--primary-text-color);
 
-  .button.hero-button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    color: #0D0D0D;
-    background-color: var(--accent-color)
-  }
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
 
-  .button.primary {
-    /* color: var(--primary-white-color); */
-    background-color: var(--accent-color);
-  }
+.section-description {
+  color: var(--text-description-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+}
 
-  .button.secondary {
-    color: var(--primary-text-color);
-    background-color: var(--secondary-background-grey);
-  }
+/* Button */
+
+.button {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.button.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: #0D0D0D;
+  background-color: var(--accent-color)
+}
+
+.button.primary {
+  /* color: var(--primary-white-color); */
+  background-color: var(--accent-color);
+}
+
+.button.secondary {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-background-grey);
+}
