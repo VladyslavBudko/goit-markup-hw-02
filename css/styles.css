@@ -205,26 +205,35 @@ body {
 
 /* Button */
 
-.button {
+.button-filter {
   color: var(--primary-text-color);
-  background-color: var(--primary-white-color);
+  background-color: var(--secondary-background-grey);
   text-decoration: none;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
 }
 
-.button.hero-button {
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button-hero {
+  color: #0D0D0D;
+  background-color: var(--accent-color);
+  text-decoration: none;
+
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  color: #0D0D0D;
-  background-color: var(--accent-color);
 }
 
-.button.primary {
-  /* color: var(--primary-white-color); */
-  background-color: var(--accent-color);
-}
-
-.button.secondary {
-  color: var(--primary-text-color);
-  background-color: var(--secondary-background-grey);
+.button-hero:hover,
+.button-hero:focus {
+  color: var(--primary-white-color);
 }
