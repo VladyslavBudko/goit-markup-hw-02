@@ -6,10 +6,10 @@
   --text-description-color: #757575;
 
   --hero-background: #2F303A;
-  --hero-button: #0D0D0D;
+  --hero-button-hover: #188cE8;
 
   --primary-background: #e5e5e5;
-  --secondary-background-grey: #f5f4fa;
+  --secondary-background: #f5f4fa;
 
   --logo-header: #000000;
   --mail-phone-footer: rgba(255, 255, 255, 0.6);
@@ -20,6 +20,7 @@ body {
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
+  font-size: 16px;
 }
 
 .visually-hidden {
@@ -105,6 +106,8 @@ body {
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
+
+  color: var(--primary-color);
 }
 
 .hero {
@@ -120,7 +123,6 @@ body {
 
 .address-footer {
   color: var(--primary-color);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71px;
   font-style: normal;
@@ -128,7 +130,6 @@ body {
 
 .footer-contact {
   color: var(--mail-phone-footer);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71px;
 
@@ -162,16 +163,15 @@ body {
   text-transform: uppercase;
 }
 
-.section-description {
+.features .section-description {
   color: var(--text-description-color);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
 
 /* team */
 .team {
-  background-color: var(--secondary-background-grey);
+  background-color: var(--secondary-background);
 }
 
 .section-item {
@@ -182,13 +182,11 @@ body {
   color: var(--primary-text-color);
 
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.19;
 }
 
 .team .section-description {
   color: var(--text-description-color);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.19;
 }
@@ -203,56 +201,48 @@ body {
   line-height: 2;
 }
 
-.section-description {
+.projects .section-description {
   color: var(--text-description-color);
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.88;
 }
 
 /* Button */
 
-.button-filter {
-  color: var(--primary-text-color);
-  background-color: var(--secondary-background-grey);
-  text-decoration: none;
-  cursor: pointer;
-
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-}
-
 .button-hero {
-  color: var(--hero-button);
+  color: var(--primary-color);
   background-color: var(--accent-color);
   text-decoration: none;
   cursor: pointer;
 
   font-family: inherit;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.88;
 }
 
-.button-filter:hover,
-.button-filter:focus,
 .button-hero:hover,
 .button-hero:focus {
+  color: var(--primary-color);
+  background-color: var(--hero-button-hover);
+}
+
+.button-filter {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-background);
+  text-decoration: none;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.62;
+}
+
+.button-filter.active {
   color: var(--primary-color);
   background-color: var(--accent-color);
 }
 
-/* Проверить и испавить кнопки
-_______________________________________________ */
-
-.button.primary {
-  /* color: var(--primary-color); */
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--primary-color);
   background-color: var(--accent-color);
-}
-
-.button.secondary {
-  color: var(--primary-text-color);
-  background-color: var(--secondary-background-grey);
 }
